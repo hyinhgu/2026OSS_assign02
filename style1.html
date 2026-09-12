@@ -28,13 +28,12 @@
             position : relative;
         }
 
-        div#menu {
+        nav {
 
             background-color : skyblue;
-            height : 100%;
+            height : 50%;
             float : left;
-            padding : 10px;
-
+            margin : 15px;
             text-align : left;
             
         }
@@ -42,13 +41,15 @@
         div#content {
 
             background-color : white;
+            padding : 10px;
+            margin : 0 100px;
         }
 
         aside {  
             width : 100px;
 
             background-color : orange;
-            padding : 15px;
+
 
             position : absolute;
             top : 0;
@@ -59,7 +60,6 @@
         }
 
         footer {
-            height : 100px;
             background-color : #04AA6D;
 
         }
@@ -75,34 +75,38 @@
 </header>
 
 <main>
-    <div id="mainwrap">
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li>Stylesheet 1</li>
-                    <li>Stylesheet 2</li>
-                    <li>Stylesheet 3</li>
-                    <li>Stylesheet 4</li>
-                    <li>No Stylesheet</li>
+    <nav>
+            <ul>
+                <li class="navpointer" onClick="style1.html">Stylesheet 1 </li>
+                <li>Stylesheet 2 </li>
+                <li>Stylesheet 3 </li>
+                <li>Stylesheet 4 </li>
+                <li>No Stylesheet </li>
 
-                </ul>
-            </nav>
-        </div>
+            </ul>
+    </nav>
 
-        <div id="content">
-            <p>Same Page Different Stylesheets
-    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-    Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
+    <div id="content">
+           <h2>Same Page Different Stylesheets</h2>
 
-    No Styles
-    This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+           <p> 
+               This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+               Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
+           </p>
+    
+    <h2>No Styles</h2>
+   <p> This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
     No Stylesheet.</p>
-        </div>
-        <aside>
-            Side-Bar
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        </aside>
     </div>
+        <aside>
+            <h2>Side-Bar</h2> 
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+               sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam 
+               erat volutpat.
+            </p>
+        </aside>
+    
 </main>
 <footer>Lorem ipsum dolor sit amet, 
         consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
