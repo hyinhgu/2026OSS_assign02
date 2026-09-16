@@ -16,6 +16,7 @@
             background-color: #000000;
             color: #84c754;
             padding: 10px;
+            
         }
 
         header h1{
@@ -29,7 +30,8 @@
         main {
             background-color : #000000;
             color : #84c754;
-            position : bottom;
+            position : relative;
+            height : 300px;
 
             
         }
@@ -47,22 +49,37 @@
         }
 
         div#content {
+            display : block;
+            position : relative;
+            bottom : 0;
+            left : 0;
+            top : 200px;
+
+
 
         }
 
         aside {  
             display:block;
             border : 1px solid #FFFFFF;
+            border-radius : 4px;
             position : absolute;
             width : 360px;
             padding : 10px;
+            top : 0;
+            right : 0;
+            line-height : 20px;
 
 
         }
 
         footer {
-           
-
+            display : block;
+            color : #84c754;
+            border: 1px solid #FFFFFF;
+            border-radius : 4px;
+            padding : 10px;
+            margin-top : 300px;
         }
 
     </style>
@@ -107,6 +124,7 @@
         </aside>
     
 </main>
+
     <footer>
         <h3>Lorem ipsum dolor sit amet, </h3>
         <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
